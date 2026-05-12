@@ -12,6 +12,14 @@ use App\Http\Controllers\MapController;
 use App\Http\Controllers\ExportController;
 use App\Http\Controllers\ProfileController;
 
+
+use Illuminate\Support\Facades\Artisan;
+
+Route::get('/migrate', function () {
+    Artisan::call('migrate', ['--force' => true]);
+    return 'Migration berhasil';
+});
+
 /*
 |--------------------------------------------------------------------------
 | Landing Page
