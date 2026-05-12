@@ -11,13 +11,20 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\MapController;
 use App\Http\Controllers\ExportController;
 use App\Http\Controllers\ProfileController;
-
-
 use Illuminate\Support\Facades\Artisan;
+
+//migration 
 
 Route::get('/migrate', function () {
     Artisan::call('migrate', ['--force' => true]);
     return 'Migration berhasil';
+});
+
+//seeding admin
+
+Route::get('/seed', function () {
+    Artisan::call('db:seed', ['--force' => true]);
+    return 'Seeder berhasil dijalankan';
 });
 
 /*
