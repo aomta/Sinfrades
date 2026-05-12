@@ -220,7 +220,7 @@ Password : password
 # 🚀 Deployment
 
 Project dapat di-deploy menggunakan:
-- Railway
+- Railway: https://sinfrades.up.railway.app/
 
 ---
 
