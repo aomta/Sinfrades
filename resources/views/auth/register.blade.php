@@ -25,8 +25,7 @@
             font-family:'Poppins',sans-serif;
             min-height:100vh;
             background:
-                linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-                url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop');
+                linear-gradient(rgb(255, 255, 255), rgba(223, 223, 223, 0.77));
             background-size:cover;
             background-position:center;
             display:flex;
